@@ -1,0 +1,103 @@
+@import "@/styles/apx.scss";
+
+.input {
+
+  border: none;
+  outline: unset;
+  background: none;
+  padding: $apx-14 $apx-15;
+  width: $apx-300 !important;
+  height: $apx-52 !important;
+  border-radius: $apx-15;
+  border: $apx-4 solid var(--color-text-light);
+  font-weight: 600;
+  font-size: $apx-20;
+  line-height: $apx-25;
+  color: var(--color-text-dark);
+  margin-right: $apx-60;
+  cursor: pointer;
+
+  &:focus,
+  &:active {
+  
+    box-shadow: inset 0 0 $apx-20 $apx-10 #dce6f042;
+  
+  }
+
+  &::placeholder {
+  
+    opacity: 0.5;
+    font-size: $apx-18;
+    line-height: $apx-22;
+    color: var(--color-text-dark);
+  
+  }
+
+  &__area {
+    
+    width: $apx-1000 !important;
+    height: $apx-240 !important;
+  
+  }
+
+  &__name {
+  
+    color: var(--color-text-dark);
+    font-weight: 600;
+    font-size: $apx-20;
+    line-height: $apx-25;
+    margin-bottom: $apx-5;
+  
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .input {
+
+    width: 100% !important;
+    height: $apx-m-52 !important;
+    padding: $apx-m-12 $apx-m-20;
+    border-radius: $apx-m-15;
+    border: $apx-m-2 solid var(--color-text-light);
+    font-weight: 600;
+    font-size: $apx-m-26;
+    line-height: $apx-m-26;
+    margin-bottom: $apx-m-40;
+    margin-right: unset;
+  
+    &:focus,
+    &:active {
+    
+      box-shadow: inset 0 0 $apx-m-10 $apx-m-10 #dce6f042;
+    
+    }
+  
+    &::placeholder {
+    
+      font-size: $apx-m-25;
+      line-height: $apx-m-25;
+    
+    }
+  
+    &__area {
+      
+      width: 100% !important;
+      height: $apx-m-365 !important;
+    
+    }
+  
+    &__name {
+    
+      font-weight: 600;
+      font-size: $apx-m-23;
+      line-height: $apx-m-28;
+      margin-left: $apx-m-10;
+      margin-bottom: $apx-m-5;
+    
+    }
+
+  }
+
+}

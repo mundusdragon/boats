@@ -1,0 +1,213 @@
+@import "@/styles/apx.scss";
+
+.container {
+
+  height: $apx-1180;
+  border-bottom: $apx-8 solid #dcd6c888;
+
+  &__waves {
+  
+    opacity: 0.93;
+    width: $apx-1920;
+    height: $apx-1180;
+  
+  }
+
+  &__compass {
+  
+    width: $apx-600;
+    height: $apx-605;
+    transition: 3.5s;
+
+    &:hover {
+      
+      transition: 3s;
+      transform: scale(1.035);
+    
+    }
+
+    &__item {
+    
+      transition: 2.5s;
+      cursor: pointer;
+      position: absolute;
+      filter: grayscale(20%);
+
+      &:hover {
+      
+        transition: 2s;
+        transform: scale(1.05);
+      
+      }
+
+      &__nord {
+      
+        top: $apx-160;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: $apx-260;
+        height: $apx-68;
+      
+      }
+
+      &__nord_east {
+      
+        top: $apx-240;
+        right: $apx-510;
+        width: $apx-200;
+        height: $apx-188;
+      
+      }
+
+      &__east {
+      
+        top: $apx-565;
+        right: $apx-240;
+        width: $apx-320;
+        height: $apx-55;
+      
+      }
+
+      &__south_east {
+      
+        top: $apx-710;
+        right: $apx-460;
+        width: $apx-260;
+        height: $apx-260;
+      
+      }
+
+      &__south {
+      
+        bottom: $apx-130;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: $apx-400;
+        height: $apx-114;
+      
+      }
+
+      &__south_west {
+      
+        top: $apx-750;
+        left: $apx-330;
+        width: $apx-390;
+        height: $apx-133;
+      
+      }
+
+      &__west {
+      
+        top: $apx-565;
+        left: $apx-220;
+        width: $apx-400;
+        height: $apx-59;
+      
+      }
+
+      &__nord_west {
+      
+        top: $apx-225;
+        left: $apx-360;
+        width: $apx-330;
+        height: $apx-250;
+      
+      }
+    
+    }
+  
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .container {
+
+    height: $apx-m-260*5;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: $apx-m-125;
+    border-bottom: $apx-m-4 solid #dcd6c888;
+  
+    &__compass {
+  
+      &__item {
+      
+        transition: 2s;
+        margin: unset !important;
+        margin-bottom: $apx-m-50 !important;
+        position: unset !important;
+  
+        &:hover {
+        
+          transition: 1.5s;
+          transform: scale(1.05);
+        
+        }
+  
+        &__nord {
+        
+          width: $apx-m-275;
+          height: $apx-m-75;
+        
+        }
+  
+        &__nord_east {
+        
+          width: $apx-m-200;
+          height: $apx-m-188;
+        
+        }
+  
+        &__east {
+
+          width: $apx-m-320;
+          height: $apx-m-55;
+        
+        }
+  
+        &__south_east {
+        
+          width: $apx-m-260;
+          height: $apx-m-260;
+        
+        }
+  
+        &__south {
+        
+          width: $apx-m-400;
+          height: $apx-m-114;
+        
+        }
+  
+        &__south_west {
+        
+          width: $apx-m-390;
+          height: $apx-m-133;
+        
+        }
+  
+        &__west {
+        
+          width: $apx-m-350;
+          height: $apx-m-50;
+        
+        }
+  
+        &__nord_west {
+
+          width: $apx-m-330;
+          height: $apx-m-250;
+        
+        }
+      
+      }
+    
+    }
+  
+  }
+
+}

@@ -1,0 +1,30 @@
+@import "./apx.scss";
+:root {
+
+  --color-bw-black: #000;
+  --color-bw-white: #fff;
+  --color-main: #716C3E;
+  --color-bg-list: #dce6f0e6;
+  --color-bg-primary: #3E6C71;
+  --color-bg-secondary: #539CA3;
+  --color-text-light: #1F5371;
+  --color-text-dark: #244B64;
+  --color-text-golden: #ede8d6;
+  --color-text-grad: linear-gradient(to right bottom, #3E6C71 0%, #3B9ED7 100%);
+  --color-text-grad-dark: linear-gradient(to right bottom, #1F5371 0%, #3E6C71 100%);
+  
+  --grad-back: linear-gradient(to right bottom, #1F5371 0%, #3D83A0 100%);
+  --grad-header: linear-gradient(to right, #539ca390 0%, #1f5371d5 100%);
+  --grad-header-back: linear-gradient(to top, #1F5371 0%, #3D83A0 100%);
+  --grad-header-mobile: linear-gradient(to right, #539ca3c9 0%, #1f5371f3 100%);
+  --grad-header-mobile-variant: linear-gradient(to right, #539ca3 0%, #1f5c73 100%);
+  --grad-button: linear-gradient(to right, #ffffff8a 0%, #FFF 40%);
+  --grad-button-name: linear-gradient(to right bottom, rgb( 35, 80, 50 ) 0%, rgb( 100, 150, 125 ) 50%);
+  --grad-textfield: linear-gradient(to right bottom, #e8e8e8cc 0%, #528399cc 100%);
+  --grad-line: linear-gradient(to right, #244b6400 0%, #244B64 50%, #244b6400 100%);
+  --grad-textline: linear-gradient(to right, #23567200 0%, #235672 50%, #23568200 100%);
+  --grad-silverline: linear-gradient(to right, #ffffff00 0%, #FFF 50%, #ffffff00 100%);
+  --grad-messengers: linear-gradient(to right, #c8dcf005 0%, #c8dcf055 25%, #c8dcf080 50%, #c8dcf055 75%, #c8dcf005 100%);
+  --grad-form: linear-gradient(to right bottom, #cbe8f6af 0%, #edeadab8 100%);
+
+}

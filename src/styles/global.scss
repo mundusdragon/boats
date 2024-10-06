@@ -1,0 +1,225 @@
+@import "./apx.scss";
+@import "./_text.scss";
+@import "./_variables.scss";
+@import "./_animations.scss";
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css";
+
+/* СБРОС СТАНДАРТНЫХ СТИЛЕЙ */
+
+*,
+::after,
+::before {
+ 
+  outline: 0 !important;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent !important;
+
+}
+
+html,
+body {
+ 
+  cursor: default;
+  min-width: 100%;
+  min-height: 100%;
+  user-select: none;
+  font-display: swap;
+  overflow-x: hidden;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+ 
+}
+
+body::-webkit-scrollbar {
+  
+  width: $apx-5;
+  
+  &-track { background: var(--color-bg-secondary); }
+
+  &-thumb {
+
+    border-radius: $apx-50;
+    background-color: var(--color-text-light);
+
+  }
+
+}
+ 
+body,
+textarea,
+input,
+span,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri";
+ 
+}
+ 
+button,
+input,
+select,
+textarea { font-family: inherit; }
+ 
+textarea { resize: vertical; }
+ 
+a,
+a:hover,
+a:visited {
+ 
+  text-decoration: none;
+  color: inherit !important;
+  font-family: inherit !important;
+
+}
+ 
+/* ОБЩИЕ СТИЛИ */
+ 
+.disabled {
+ 
+  filter: grayscale(50%);
+  pointer-events: none;
+ 
+}
+
+.pointer { cursor: pointer; }
+
+.m-0 { margin: 0 auto; }
+
+//стили дисплея
+.none { display: none; }
+.flex { display: flex; }
+.block { display: block; }
+
+//стили позиционирования
+.fixed { position: fixed; }
+.absolute { position: absolute; }
+.relative { position: relative; }
+
+//стили медиапоказа элементов
+// .desktop-laptop-flex { display: flex !important; }
+// .desktop-laptop { display: block !important; }
+.desktop { display: block !important; }
+.desktop-flex { display: flex !important; }
+// .laptop { display: none !important; }
+// .laptop-flex { display: none !important; }
+.mobile { display: none !important; }
+.mobile-flex { display: none !important; }
+
+//стили фона
+.bg {
+ 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #539ca305 0%, #3e6c7135 100%);
+  z-index: -1;
+
+  &__img {
+ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: black;
+   
+  } 
+
+} 
+
+//стили контейнера
+.wrapper {
+ 
+  padding: 10px;
+  width: 1600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+ 
+}
+ 
+//flex-стили
+.flex-center {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.flex-full { flex: 1 1; }
+
+.row { flex-direction: row; }
+.column { flex-direction: column; }
+.row-reverse { flex-direction: row-reverse; }
+.column-reverse { flex-direction: column-reverse; }
+.around { justify-content: space-around; }
+.between { justify-content: space-between; } 
+.center { justify-content: center; }
+.start { justify-content: flex-start; }
+.end { justify-content: flex-end; }
+.items-end { align-items: flex-end; }
+.items-start { align-items: flex-start; }
+.items-center { align-items: center; }
+
+.self-center { place-self: center; }
+
+//стили текста
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.font-thin { font-weight: 100; }
+.font-extralight { font-weight: 200; }
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.font-black { font-weight: 900; }
+.font-extrablack { font-weight: 1000; }
+
+/* АДАПТИВ */
+ 
+// //адаптив 1400px
+
+// @media screen and (max-width: 1400px) {
+
+//   .desktop { display: none !important; }
+//   .desktop-flex { display: none !important; }
+//   .laptop { display: block !important; }
+//   .laptop-flex { display: block !important; }
+//   .mobile { display: none !important; }
+//   .mobile-flex { display: none !important; }
+// }
+
+//адаптив 1200px
+
+@media screen and (max-width: 1200px) {
+
+  // .desktop-laptop-flex { display: none !important; }
+  // .desktop-laptop { display: none !important; }
+  .desktop { display: none !important; }
+  .desktop-flex { display: none !important; }
+  // .laptop { display: none !important; }
+  // .laptop-flex { display: none !important; }
+  .mobile { display: block !important; }
+  .mobile-flex { display: flex !important; }
+
+}

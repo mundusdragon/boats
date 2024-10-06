@@ -1,0 +1,52 @@
+@import "@/styles/apx.scss";
+.list_item {
+
+  &__name {
+  
+    width: 100%;
+    height: $apx-25;
+    opacity: 0.75;
+    font-weight: 700;
+    font-size: $apx-20;
+    line-height: $apx-25;
+    color: var(--color-text-dark);    
+    transition: 0.35s;
+  
+    &:hover,
+    &:focus, 
+    &:active {
+    
+      opacity: 1;
+      transition: 0.25s;
+      transform: scale(1.05);
+      margin-left: $apx-3;
+    
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .list_item {
+
+    &__name {
+    
+      height: $apx-m-30;
+      font-size: $apx-m-25;
+      line-height: $apx-m-30;
+    
+      &:hover,
+      &:focus, 
+      &:active {
+      
+        margin-left: $apx-m-3;
+      
+      }
+  
+    }
+  
+  }
+
+}

@@ -1,0 +1,120 @@
+@import "@/styles/apx.scss";
+
+.policy {
+
+  padding: $apx-140 $apx-60 $apx-20;
+
+  &__waves {
+  
+    top: 0;
+    left: 0;
+    width: $apx-1920;
+    height: $apx-1515+$apx-1505;
+  
+  }
+
+  &__text {
+    
+    color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right bottom, #244B64 0%, #235672 100%);
+
+    &__title {
+  
+      text-align: center;
+      font-weight: 800;
+      font-size: $apx-50;
+      line-height: $apx-55;
+      margin-bottom: $apx-80;
+    
+    }
+
+    &__subtitle {
+
+      font-weight: 700;
+      font-size: $apx-25;
+      line-height: $apx-30;
+      margin-bottom: $apx-15;
+    
+    }
+
+    &__text {
+
+      font-weight: 600;
+      font-size: $apx-20;
+      line-height: $apx-25;
+      margin-bottom: $apx-30;
+
+      span {
+      
+        font-size: $apx-22;
+        line-height: $apx-28;
+      
+      }
+    
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .policy {
+
+    padding: $apx-m-150 $apx-m-20 $apx-m-10;
+  
+    &__waves { display: none; }
+  
+    &__text {
+      
+      color: #244B64;
+      -webkit-background-clip: unset;
+      background-clip: unset;
+      background-image: unset;
+  
+      &__title {
+
+        text-align: start;
+        font-size: $apx-m-40;
+        line-height: $apx-m-40;
+        margin-bottom: $apx-m-40;
+
+        span {
+
+          font-size: $apx-m-35;
+          line-height: $apx-m-40;
+
+        }
+      
+      }
+  
+      &__subtitle {
+
+        font-size: $apx-m-25;
+        line-height: $apx-m-30;
+        margin-bottom: $apx-m-15;
+      
+      }
+  
+      &__text {
+  
+        font-size: $apx-m-20;
+        line-height: $apx-m-25;
+        margin-bottom: $apx-m-30;
+  
+        span {
+        
+          font-size: $apx-m-22;
+          line-height: $apx-m-28;
+        
+        }
+      
+      }
+  
+    }
+  
+  }
+
+}

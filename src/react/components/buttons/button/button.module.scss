@@ -1,0 +1,88 @@
+@import "@/styles/apx.scss";
+@import "@/styles/animations.scss";
+
+.button {
+
+  z-index: 101;
+  transition: 0.35s;
+  outline: none;
+  border: unset;
+  border-radius: $apx-40;
+  margin: 0 $apx-15;
+  padding: $apx-8 $apx-14;
+  background: var(--grad-button);
+  white-space: nowrap;
+  animation: returnButtonBackground 0.4s forwards;
+  color: rgb(40, 100, 80) !important;
+  &__default_color {
+    
+    color: rgb(20, 50, 40) !important;
+
+    .button__name, a, p {
+  
+      padding-top: $apx-5;
+      color: rgb(20, 50, 40) !important;
+      
+    }
+  
+  }
+
+  &:focus,
+  &:active,
+  &:hover {
+
+    transition: 0.5s;
+    transform: scale(1.05);
+    animation: changeButtonBackground 0.3s forwards;
+
+  }
+  
+  &:not(&:hover) {
+    
+    animation: none;
+    transform: scale(1) !important;
+  
+  }
+
+  &__name, a, p {
+  
+    font-size: $apx-19;
+    line-height: $apx-21;
+    font-weight: 800 !important;
+    color: green !important;
+    
+  }
+
+  &:visited { transform: scale(1); }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .button {
+
+    margin: 0 $apx-m-10;
+    border-radius: $apx-m-40;
+    padding: $apx-m-8 $apx-m-14;
+  
+    &:focus,
+    &:active,
+    &:hover {
+
+      transform: scale(1);
+      animation: changeButtonBackground 0.3s forwards;
+  
+    }
+  
+    &__name, a, p {
+    
+      font-size: $apx-m-13;
+      line-height: $apx-m-15;
+      
+    }
+  
+    &:visited { transform: scale(1); }
+  
+  }
+
+}

@@ -1,0 +1,302 @@
+@import "@/styles/apx.scss";
+
+.container {
+
+  &__back {
+  
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: $apx-1920;
+    height: $apx-1800+$apx-550;
+    background: var(--grad-back);
+    border-top: $apx-6 solid #DCD6C8;
+
+  }
+
+  &__waves {
+  
+    z-index: 0;
+    left: 0;
+    top: -$apx-200;
+    width: $apx-1920;
+    height: $apx-1550;
+    opacity: 0.025;
+
+  }
+
+  &__wave {
+  
+    z-index: 1;
+    left: 0;
+    top: $apx-10;
+    width: $apx-1920;
+    height: $apx-725;
+    opacity: 0.25;
+
+  }
+
+  &__title {
+
+    h6 {
+    
+      z-index: 5;
+      top: $apx-25;
+      margin-top: $apx-75;
+      margin-bottom: $apx-125;
+      margin-left: $apx-15;
+      margin-right: $apx-15;
+      font-size: $apx-44;
+      line-height: $apx-58;
+      color: var(--color-bw-white);
+    
+    }
+
+    &__liner {
+    
+      opacity: 0.555;
+      height: $apx-1;
+      width: $apx-600;
+      background: var(--grad-silverline);
+
+    }
+  
+  }
+
+  &__call {
+
+    width: 100%;
+    height: $apx-300;
+    margin-top: -$apx-350;
+
+    &__text {
+        
+      z-index: 5;
+      width: 100%;
+      top: $apx-50;
+      font-weight: 800;
+      font-size: $apx-40;
+      line-height: $apx-45;
+      color: var(--color-bw-white);
+
+      span {
+      
+        font-weight: 700;
+        font-size: $apx-25;
+        line-height: $apx-30;
+      
+      }
+    
+    }
+
+    &__liner {
+    
+      opacity: 0.555;
+      height: $apx-1;
+      width: $apx-600;
+      background: var(--grad-silverline);
+
+      &__top {
+      
+        top: 0;
+        left: $apx-50;
+      
+      }
+
+      &__bottom {
+      
+        top: unset;
+        bottom: 0;
+        right: $apx-50;
+      
+      }
+
+    }
+  
+  }
+
+}
+
+.address {
+
+  top: -$apx-50;
+
+  &__map__container {
+  
+    z-index: 25;
+    overflow: hidden;
+    margin-left: $apx-210;
+    padding-bottom: $apx-500;
+
+    &__map {
+    
+      $size: $apx-600;
+      width: $size;
+      height: $size;
+    
+    }
+
+    &__frame {
+    
+      &__outside {
+      
+        $size: $apx-630;
+        width: $size;
+        height: $size;
+        background: #c8c8c84c;
+      
+      }
+
+      &__inside {
+      
+        $size: $apx-615;
+        width: $size;
+        height: $size;
+        background: #b4c8c8ac;
+      
+      }
+    
+    }
+  
+  }
+
+  &__text {
+  
+    z-index: 15;
+    top: -$apx-250;
+    left: -$apx-100;
+    width: $apx-800;
+    color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right bottom, #F1F3F5 0%, #FFFFFF 100%);
+  
+    font-weight: 800;
+    font-size: $apx-40;
+    line-height: $apx-45;
+
+    &__middle {
+    
+      font-size: $apx-25;
+      line-height: $apx-30;
+    
+    }
+
+    &__bottom {
+    
+      font-size: $apx-30;
+      line-height: $apx-35;
+
+      &__note {
+      
+        font-size: $apx-20;
+        line-height: $apx-25;
+      
+      }
+    
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .container {
+
+    height: $apx-m-360*3;
+
+    &__back {
+    
+      &__mobile {
+      
+        top: $apx-m-150;
+        z-index: -1;
+        width: 100%;
+        height: $apx-m-330*3;
+      
+      }
+  
+    }
+
+  }
+  
+  .address {
+  
+    top: -$apx-m-5;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+    &__map__container {
+    
+      overflow: hidden;
+      margin-left: unset;
+      padding-bottom: unset;
+  
+      &__map {
+      
+        width: $apx-m-390;
+        height: $apx-m-470;
+      
+      }
+  
+      &__frame {
+      
+        &__outside {
+        
+          width: $apx-m-390;
+          height: $apx-m-490;
+        
+        }
+  
+        &__inside {
+        
+          width: $apx-m-390;
+          height: $apx-m-480;
+
+        }
+      
+      }
+    
+    }
+  
+    &__text {
+      
+      width: 100%;
+      top: $apx-m-20;
+      left: $apx-m-20;
+      text-align: left;
+      -webkit-text-stroke: thin #423f1c0f;
+      color: var (--color-text-golden) !important;
+      text-shadow: $apx-1 $apx-1 $apx-1 rgba (25, 25, 25, 0.5);
+
+      font-weight: 800;
+      font-size: $apx-m-28;
+      line-height: $apx-m-34;
+  
+      &__middle {
+      
+        font-size: $apx-m-20;
+        line-height: $apx-m-25;
+      
+      }
+  
+      &__bottom {
+      
+        font-size: $apx-m-22;
+        line-height: $apx-m-26;
+  
+        &__note {
+        
+          font-size: $apx-20;
+          line-height: $apx-25;
+        
+        }
+      
+      }
+  
+    }
+  
+  }
+
+}

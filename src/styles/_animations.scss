@@ -1,0 +1,111 @@
+@import "./apx.scss";
+
+@keyframes pulseLoop {
+
+  from {
+    transform: scale(1);
+  }
+  
+  to {
+    transform: scale(1.05);
+  }
+
+}
+
+@keyframes fadeIn {
+  
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+  
+}
+
+@keyframes fadeInSlow {
+  
+  0% {
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  
+}
+
+@keyframes fadeOut {
+  
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+  
+}
+
+@keyframes fadeOutSlow {
+  
+  0% {
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+  
+}
+
+@keyframes rotate {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+
+}
+
+@keyframes changeButtonBackground {
+  0% {
+    background: linear-gradient(to right, #ffffffc8 0%, #FFF 40%);
+  }
+  25% {
+    background: linear-gradient(to right, #FFF 0%, #ffffffc8 20%, #FFF 40%);
+  }
+  50% {
+    background: linear-gradient(to right, #FFF 0%, #ffffffc8 30%, #FFF 60%);
+  }
+  100% {
+    background: linear-gradient(to right, #FFF 80%, #ffffffc8 100%);
+  }
+}
+
+@keyframes returnButtonBackground {
+  0% {
+    background: linear-gradient(to right, #FFF 80%, #ffffffc8 100%);
+  }
+  25% {
+    background: linear-gradient(to right, #FFF 0%, #ffffffc8 30%, #FFF 60%);
+  }
+  50% {
+    background: linear-gradient(to right, #FFF 0%, #ffffffc8 20%, #FFF 40%);
+  }
+  100% {
+    background: linear-gradient(to right, #ffffffc8 0%, #FFF 40%);
+  }
+}

@@ -1,0 +1,30 @@
+@import "@/styles/apx.scss";
+.anchor {
+
+  &__about { top: -$apx-25; }
+
+  &__brands { top: $apx-50; }
+
+  &__form { top: $apx-25; }
+  
+}
+
+@media screen and (max-width: 1200px) {
+
+  .reverse { flex-direction: column-reverse; }
+
+  .anchor {
+
+    &__about { top: -$apx-m-50; }
+
+    &__brands { top: -$apx-m-25; }
+
+    &__adressess { top: -$apx-m-235; }
+
+    &__form { top: -$apx-m-135; }
+
+    &__props { top: -$apx-m-100; }   
+
+  }
+
+}

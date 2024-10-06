@@ -1,0 +1,132 @@
+@import "@/styles/apx.scss";
+
+.container {
+
+  width: 100%;
+  height: $apx-200;
+  background: var(--grad-messengers);
+
+  &__compass {
+  
+    left: 0;
+    top: -$apx-50;
+    width: $apx-120;
+    height: $apx-300;
+    &__right { left: unset; right: 0; }
+  
+  }
+
+  &__icon {
+  
+    z-index: 10;
+    transition: 1s;
+    $size: $apx-65;
+    width: $size;
+    height: $size;
+    margin: $apx-5 $apx-50;
+    &:hover { transform: scale(1.1); transition: 0.5s; }
+  
+  }
+
+}
+
+.title {
+
+  margin-top: $apx-25;
+  font-weight: 600;
+  font-size: $apx-26;
+  line-height: $apx-31;
+  color: var(--color-text-dark);
+  
+  &__big {
+  
+    font-size: $apx-28;
+    line-height: $apx-33;
+
+  }
+
+  &__small {
+  
+    font-weight: 500;
+    font-size: $apx-23;
+    line-height: $apx-28;
+  
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .container {
+
+    width: 100%;
+    height: $apx-m-480;
+    background: linear-gradient(to bottom, #e7e6eb00 0%, #e7e6ebbd 22%, #e7e6eb62 44%, #e7e6eb30 66%, #e7e6eb00 88%);
+  
+    &__compass {
+    
+      top: 0;
+      left: 0;
+      width: $apx-m-120;
+      height: $apx-m-300;
+    
+    }
+
+    a {
+      
+      position: absolute;
+      top: $apx-m-350;
+    
+    }
+  
+    &__icon {
+    
+      $size: $apx-m-80;
+      width: $size;
+      height: $size;
+      margin: $apx-m-5 $apx-m-50;
+      &:hover { transform: scale(1); }
+    
+    }
+  
+  }
+  
+  .title {
+  
+    text-align: right;
+    padding-right: $apx-m-35; 
+    min-width: $apx-m-390;
+    margin-top: -$apx-m-135;
+    font-size: $apx-m-22;
+    line-height: $apx-m-28;
+
+    span {
+      
+      display: inline-block !important;
+      span::first-letter { text-transform: uppercase !important; }
+
+    }
+    
+    &__big {
+
+      font-size: $apx-m-22;
+      line-height: $apx-m-28;
+  
+    }
+  
+    &__small {
+    
+      top: $apx-m-25;
+      left: -$apx-m-50;
+      text-align: center;
+      font-size: $apx-m-25;
+      line-height: $apx-m-30;
+    
+    }
+  
+  }
+
+  .tg { left: $apx-m-5; }
+  .wa { right: $apx-m-5; }
+
+}
