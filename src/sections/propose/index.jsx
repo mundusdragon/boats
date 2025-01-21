@@ -98,9 +98,9 @@ const Propose = ({}) => {
       <h3 className = {`font-bold text-20 text-20-m ${ s.propose__text } relative`}>
 
         Мы свыше 5 лет занимаемся <br className = "mobile"/>комплексным обслуживанием <br className = "mobile"/>и ремонтом <br className = "desktop"/>
-        любой сложности как <br className = "mobile"/>крупных яхт, так и маломерных судов, <br className = "mobile"/>являясь <br className = "desktop"/>
-        одним из лидеров в сфере <br className = "mobile"/>сервисного обслуживания <br className = "desktop"/>
-        водного <br className = "mobile"/>транспорта в Краснодарском крае <br />
+        любой сложности как <br className = "mobile"/>крупных яхт, так и маломерных <br className = "mobile"/>судов, являясь <br className = "desktop"/>
+        одним из лидеров <br className = "mobile"/>в сфере сервисного обслуживания <br />
+        водного транспорта <br className = "mobile"/>в Краснодарском крае <br />
 
         <ul>
 
