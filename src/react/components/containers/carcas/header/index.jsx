@@ -62,7 +62,7 @@ const Header = ({ withNavigate = true, withMenu = true }) => {
               
             >
 
-              <p className = {`${ s.header__menu } mobile`}>МЕНЮ {`>>>`}</p>
+              <p className = {`${ s.header__menu } ${ s.header__menu__mobi } mobile`}>МЕНЮ {`>>>`}</p>
 
               <img src = "/img/anchor-white.png" className = {`${ s.header__menu__anchor } mobile`}/>
 

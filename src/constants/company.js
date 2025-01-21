@@ -8,12 +8,12 @@ const COMPANY = {
   CHANNEL_TYPES: [ "Телефон", "Telegram", "WhatsApp" ],
 
   OWNER_MAN: "Швецов Артур Борисович",
-  OWNER_MAN_ROLE: "генеральный директор BOATS GROUP",
-  OWNER_MAN_PHONE: "+7 (918) 610-83-43",
+  OWNER_MAN_ROLE: "Генеральный директор BOATS GROUP",
+  // OWNER_MAN_PHONE: "+7 (918) 610-83-43",
 
-  OWNER_WOMAN: "Швецова Леся Николаевна",
+  OWNER_WOMAN: "Леся Николаевна",
   OWNER_WOMAN_ROLE: "PR-директор BOATS GROUP",
-  OWNER_WOMAN_PHONE: "+7 (988) 153-96-65",
+  // OWNER_WOMAN_PHONE: "+7 (988) 153-96-65",
 
 }
 

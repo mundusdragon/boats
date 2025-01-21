@@ -272,10 +272,17 @@
 
       &__anchor {
       
-        width: $apx-m-44;
-        height: $apx-m-55;
-        margin-left: $apx-m-5;
+        width: $apx-m-35;
+        height: $apx-m-46;
+        margin-left: -$apx-m-2;
         transform: rotate(-22.33deg);
+      
+      }
+
+      &__mobi {
+      
+        left: -$apx-m-2 !important;
+        position: relative !important;
       
       }
 

@@ -17,7 +17,8 @@ const Propose = ({}) => {
 
       <div className = {`flex column items-center ${ s.propose__titles } relative`}>
       
-        <h2 className = {`font-bold ${ s.propose__title } relative`}><span>BOATS GROUP</span>&nbsp;&nbsp;&nbsp;&nbsp;<br className = "mobile"/>надежный сервис <br className = "mobile"/>ремонта яхт и катеров <br className = "mobile"/>в Сочи и Крыму.</h2>
+        {/* <h2 className = {`font-bold ${ s.propose__title } relative`}><span>BOATS GROUP</span>&nbsp;&nbsp;&nbsp;&nbsp;<br className = "mobile"/>надежный сервис <br className = "mobile"/>ремонта яхт и катеров <br className = "mobile"/>в Сочи и Крыму.</h2> */}
+        <h2 className = {`font-bold ${ s.propose__title } relative`}><span>BOATS GROUP</span>&nbsp;&nbsp;&nbsp;&nbsp;<br className = "mobile"/>Качество, без компромиссов</h2>
         
         <br />
 
@@ -27,14 +28,14 @@ const Propose = ({}) => {
           <img src = "/img/propose/buoy(big).png" className = {`${ s.propose__buoy } ${ s.propose__buoy__big } absolute mobile`}/>
   
           <span className = "desktop">Реставрация любой сложности. Укладка Бирманского тика, работа с искусственным тиком.<br />
-          Диагностика Мастервольт. Диагностика ВольвоПента. Работаем по всей стране.</span>
+          Диагностика MASTERVOLT . Диагностика Volvo Penta. Работаем по всей стране.</span>
         
           <ul className = "mobile">
 
             <li>реставрация любой сложности</li>
             <li>укладка Бирманского тика, <br />работа с искусственным тиком</li>
-            <li>диагностика Мастервольт</li>
-            <li>диагностика ВольвоПента</li>
+            <li>диагностика MASTERVOLT</li>
+            <li>диагностика Volvo Penta</li>
             <li>работаем по всей стране</li>
 
           </ul>
@@ -114,7 +115,7 @@ const Propose = ({}) => {
           <li>
             
             работаем с крупнейшими <br className = "mobile"/>производителями водной техники, <br className = "mobile"/>являемся сервисом гарантийного <br className = "mobile"/>обслуживания верфей <br className = "desktop"/>
-            в городе Сочи <br className = "mobile"/><em>(верфь “Кранчи”)</em>
+            в городе Сочи <br className = "mobile"/><em>(верфь Сranchi)</em>
 
           </li>
 

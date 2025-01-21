@@ -287,9 +287,9 @@
   
     &__back {
     
-      top: -$apx-m-165;
       width: 100%;
-      height: auto;
+      height: $apx-m-350*5;
+      top: -$apx-m-165;
     
     }
   
@@ -337,7 +337,7 @@
         font-weight: 500;
         font-size: $apx-m-16;
         line-height: $apx-m-21;
-        margin-top: $apx-m-69;
+        margin-top: $apx-m-150;
         margin-left: -$apx-m-35;
         white-space: nowrap;
   
