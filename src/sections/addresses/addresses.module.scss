@@ -268,7 +268,11 @@
       text-align: left;
       -webkit-text-stroke: thin #423f1c0f;
       color: var (--color-text-golden) !important;
-      text-shadow: $apx-1 $apx-1 $apx-1 rgba (25, 25, 25, 0.5);
+      text-shadow: unset !important;
+      color: #FFF !important;
+      -webkit-background-clip: unset;
+      background-clip: unset;
+      background-image: unset;
 
       font-weight: 800;
       font-size: $apx-m-28;

@@ -409,8 +409,9 @@
 
       p {
       
-        font-size: $apx-m-20;
-        line-height: $apx-m-25;
+        white-space: nowrap !important;
+        font-size: $apx-m-18;
+        line-height: $apx-m-22;
         text-shadow: $apx-m-1 $apx-m-1 $apx-m-2 rgba(25,25,25, 0.75);
       
       }

@@ -39,8 +39,8 @@ const AboutUs = ({}) => {
 
     <section className = {`${ s.about } relative`}>
 
-      <img src = "/img/about/back.png" className = {`${ s.about__back } absolute desktop`}/>
-      <img src = "/img/about/back-fragment.png" className = {`${ s.about__back__fragment } absolute desktop`}/>
+      {/* <img src = "/img/about/back.png" className = {`${ s.about__back } absolute desktop`}/> */}
+      {/* <img src = "/img/about/back-fragment.png" className = {`${ s.about__back__fragment } absolute desktop`}/> */}
       
       <img src = "/img/about/back-mobile.png" className = {`${ s.about__back } absolute mobile`}/>
 
@@ -64,7 +64,7 @@ const AboutUs = ({}) => {
 
           <div className = {`${ s.field__text__liner } absolute`}/>
 
-          <span className = { s.field__text__list }>Предлагаем широкий спектр услуг, включая:</span>
+          <span className = { s.field__text__list }>Предлагаем широкий <br className = "mobile"/>спектр услуг, включая:</span>
 
           <ul>
 

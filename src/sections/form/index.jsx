@@ -28,8 +28,27 @@ const Form = () => {
   }
 
   function sendForm() {
-
-    alert("Ваша заявка отправлена!");
+  /*
+    console.log(`фио: ${ name }, способ связи: ${ type }, comment: ${ comment }, number: ${ number }`);
+  */
+      var formData = {
+          name: name,
+          type: type,
+          comment: comment,
+          number: number
+      };
+  
+      async function sendData(data) {
+          const response = await fetch('form.php', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(data)
+          });
+          const responseData = await response.json();
+         
+      }
+  
+      sendData(formData);
 
   }
 

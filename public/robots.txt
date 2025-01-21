@@ -1,0 +1,3 @@
+#ключевые настройки [core settings]
+User-agent: *
+Disallow:
